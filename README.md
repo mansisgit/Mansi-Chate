@@ -1,11 +1,28 @@
-<div align="center">
+# Arjun Sharma Portfolio
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+A modern, interactive Sales Engineer portfolio built with React, Vite, Tailwind CSS, and Framer Motion.
 
-  <h1>Built with AI Studio</h2>
+## Features
+- **AI Voice Narration**: Click the volume icon to have an AI read the portfolio summary.
+- **Interactive Scroll**: Background colors and elements fade and transform as you scroll.
+- **Light/Dark Mode**: Custom light green and white aesthetic for both modes.
+- **Loom Integration**: Embedded demo video that can be triggered manually or after AI narration.
+- **Responsive Design**: Fully optimized for mobile and desktop.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## How to Edit
+1. **Content**: Open `src/constants.ts` to update your projects, experience, skills, and certifications.
+2. **Video**: In `src/App.tsx`, update the Loom embed URL with your own video ID.
+3. **Styles**: Modify `src/index.css` or Tailwind classes in components to change the look.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Deployment to GitHub Pages
+1. Push this code to a GitHub repository.
+2. Go to **Settings > Pages**.
+3. Select **GitHub Actions** as the source.
+4. Use a standard "Static HTML" or "Vite" deployment workflow (GitHub provides templates for this).
+   - Alternatively, run `npm run build` and upload the `dist` folder to the `gh-pages` branch.
 
-</div>
+## Local Development
+```bash
+npm install
+npm run dev
+```
