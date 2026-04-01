@@ -74,6 +74,12 @@ export default function App() {
       style={{ backgroundColor }}
       className="min-h-screen font-sans selection:bg-primary/30"
     >
+      {/* Scroll Progress Bar */}
+      <motion.div
+        className="fixed top-0 left-0 right-0 h-1 bg-primary z-[100] origin-left"
+        style={{ scaleX: scrollYProgress }}
+      />
+
       {/* Navigation */}
       <nav className="sticky top-0 z-50 backdrop-blur-md border-b border-primary/10 bg-background/80">
         <div className="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
